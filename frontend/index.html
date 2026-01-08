@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL INFORMATION HACK | CyberSearch v2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="terminal-header">
+            <div class="terminal-controls">
+                <div class="control-btn close"></div>
+                <div class="control-btn minimize"></div>
+                <div class="control-btn maximize"></div>
+            </div>
+            <div class="terminal-title">
+                <i class="fas fa-terminal"></i>
+                <span>PERSON_SEARCH_SYSTEM v2.0</span>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot active"></span>
+                <span class="status-text">ONLINE</span>
+            </div>
+        </header>
+
+        <main class="terminal">
+            <div class="system-banner">
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text=" ###::::'##:::::::'####::::'##::::'##::::'###:::::'######::'##:::'##:">
+                        ###::::'##:::::::'####::::'##::::'##::::'###:::::'######::'##:::'##:
+                    </span>
+                </div>
+
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text="::'## ##::: ##:::::::. ##::::: ##:::: ##:::'## ##:::'##... ##: ##::'##::">
+                        ::'## ##::: ##:::::::. ##::::: ##:::: ##:::'## ##:::'##... ##: ##::'##::
+                    </span>
+                </div>
+
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text=":'##:. ##:: ##:::::::: ##::::: ##:::: ##::'##:. ##:: ##:::..:: ##:'##:::">
+                        :'##:. ##:: ##:::::::: ##::::: ##:::: ##::'##:. ##:: ##:::..:: ##:'##:::
+                    </span>
+                </div>
+
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text="'##:::. ##: ##:::::::: ##::::: #########:'##:::. ##: ##::::::: #####::::">
+                        '##:::. ##: ##:::::::: ##::::: #########:'##:::. ##: ##::::::: #####::::
+                    </span>
+                </div>
+
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text=" #########: ##:::::::: ##::::: ##.... ##: #########: ##::::::: ##. ##:::">
+                        #########: ##:::::::: ##::::: ##.... ##: #########: ##::::::: ##. ##:::
+                    </span>
+                </div>
+
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text=" ##.... ##: ##:::::::: ##::::: ##:::: ##: ##.... ##: ##::: ##: ##:. ##::">
+                        ##.... ##: ##:::::::: ##::::: ##:::: ##: ##.... ##: ##::: ##: ##:. ##::
+                    </span>
+                </div>
+
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text=" ##:::: ##: ########:'####:::: ##:::: ##: ##:::: ##:. ######:: ##::. ##:">
+                        ##:::: ##: ########:'####:::: ##:::: ##: ##:::: ##:. ######:: ##::. ##:
+                    </span>
+                </div>
+
+                <div class="banner-line">
+                    <span class="glitch-text"
+                        data-text="..:::::..::........::....:::::..:::::..::..:::::..:::......:::..::::..::">
+                        ..:::::..::........::....:::::..:::::..::..:::::..:::......:::..::::..::
+                    </span>
+                </div>
+
+                <div class="subtitle">
+                    <span class="cyber-text">ACCESS GRANTED — IDENTITY CORE ONLINE</span>
+                </div>
+
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+
+            <div class="search-section">
+                <div class="command-prompt">
+                    <span class="prompt-user">root@cybersearch:</span>
+                    <span class="prompt-path">~/person</span>
+                    <span class="prompt-symbol">$</span>
+                    <div class="input-wrapper">
+                        <input type="text" id="searchInput" class="cyber-input" placeholder="search_person --name=[ISM]"
+                            autocomplete="off" autofocus>
+                        <div class="input-cursor"></div>
+                    </div>
+                </div>
+
+                <div class="search-controls">
+                    <button id="searchBtn" class="cyber-button">
+                        <i class="fas fa-search"></i>
+                        <span>SEARCH_EXECUTE</span>
+                        <div class="button-glow"></div>
+                    </button>
+                    <button id="resetBtn" class="cyber-button secondary">
+                        <i class="fas fa-redo"></i>
+                        <span>SYSTEM_CLEAR</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="status-panel">
+                <div class="status-item">
+                    <span class="status-label">DATABASE_STATUS:</span>
+                    <span id="dbStatus" class="status-value loading">CONNECTING...</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">TOTAL_RECORDS:</span>
+                    <span id="totalRecords" class="status-value">---</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">SEARCH_MODE:</span>
+                    <span class="status-value active">FUZZY_MATCH</span>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <i class="fas fa-database"></i>
+                        <span>SEARCH_RESULTS</span>
+                        <div class="title-underline"></div>
+                    </h3>
+                    <div class="results-counter">
+                        <span id="resultsCount">0</span>
+                        <span>RECORDS_FOUND</span>
+                    </div>
+                </div>
+
+                <div id="loadingAnimation" class="loading-animation" style="display: none;">
+                    <div class="scan-line"></div>
+                    <div class="loading-grid">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="loading-text">
+                        <span class="loading-char">S</span>
+                        <span class="loading-char">C</span>
+                        <span class="loading-char">A</span>
+                        <span class="loading-char">N</span>
+                        <span class="loading-char">N</span>
+                        <span class="loading-char">I</span>
+                        <span class="loading-char">N</span>
+                        <span class="loading-char">G</span>
+                        <span class="loading-char">.</span>
+                        <span class="loading-char">.</span>
+                        <span class="loading-char">.</span>
+                    </div>
+                </div>
+
+                <div id="resultsContainer" class="results-container">
+                    <div class="no-results" id="noResults">
+                        <div class="no-results-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>DATABASE_QUERY_AWAITING</h3>
+                        <p>Shaxsning ismi yoki familyasini kiriting va tizim avtomatik tarzda ma'lumotlarni topadi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="terminal-footer">
+                <div class="footer-left">
+                    <span class="footer-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>ENCRYPTION: AES-256</span>
+                    </span>
+                    <span class="footer-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>RESPONSE_TIME: <span id="responseTime">0ms</span></span>
+                    </span>
+                </div>
+                <div class="footer-right">
+                    <span class="footer-item">
+                        <i class="fas fa-copyright"></i>
+                        <span>CYBERSEARCH v2.0</span>
+                    </span>
+                    <span class="footer-item">
+                        <i class="fas fa-network-wired"></i>
+                        <span id="connectionStatus">CONNECTED</span>
+                    </span>
+                </div>
+            </footer>
+        </main>
+
+        <div id="studentModal" class="modal">
+            <div class="modal-content cyber-modal">
+                <div class="modal-header">
+                    <h3 class="modal-title">
+                        <i class="fas fa-user-secret"></i>
+                        <span id="modalStudentName">PERSON_INFO</span>
+                    </h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                </div>
+                <div class="modal-footer">
+                    <button class="cyber-button small" id="printProfile">
+                        <i class="fas fa-print"></i>
+                        <span>PRINT_PROFILE</span>
+                    </button>
+                    <button class="cyber-button small secondary modal-close">
+                        <i class="fas fa-times"></i>
+                        <span>CLOSE_WINDOW</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
